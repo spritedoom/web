@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product</title>
+<link rel="stylesheet" href="style.css">
+<script src="cart.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<h2>WEBSHOP</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="shop.html">Shop</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+
+</header>
+
+<div class="container product-page">
+
+<div class="product-page">
+
+<div class="product-gallery">
+
+<div class="main-image-container">
+
+<img id="mainImage" src="images/1.jpg" class="main-image">
+
+</div>
+
+<div class="thumbnail-row">
+
+<img src="images/item2.jpg" onclick="changeImage(this)">
+<img src="images/item3.jpg" onclick="changeImage(this)">
+<img src="images/3.jpg" onclick="changeImage(this)">
+<img src="images/4.jpg" onclick="changeImage(this)">
+
+</div>
+
+</div>
+
+
+<div class="product-details">
+
+<h1>Item Name</h1>
+
+<p class="price">5€</p>
+
+<div class="size-section">
+
+<p>Select size</p>
+
+<div class="sizes">
+
+<button class="size-btn" onclick="selectSize(this,'XS')">XS</button>
+<button class="size-btn" onclick="selectSize(this,'S')">S</button>
+<button class="size-btn" onclick="selectSize(this,'M')">M</button>
+<button class="size-btn" onclick="selectSize(this,'L')">L</button>
+<button class="size-btn" onclick="selectSize(this,'XL')">XL</button>
+<button class="size-btn" onclick="selectSize(this,'2XL')">2XL</button>
+
+</div>
+
+</div>
+
+<p>
+Short description of the product.
+</p>
+
+<button onclick="addToCartWithSize('Product1',5)">
+Add to cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="toast">Added to cart</div>
+
+</body>
+</html>
